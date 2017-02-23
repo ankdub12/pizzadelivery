@@ -1,7 +1,7 @@
 {
-  "name": "API.AI Shipping Costs Webhook",
-  "description": "API.AI Shipping Costs Webhook Sapmple",
-  "repository": "https://github.com/svet4/shipping-costs-sample",
-  "logo": "http://xvir.github.io/img/apiai.png",
+  "name": "API.AI Pizza delivery",
+  "description": "API.AI pizza delivery Webhook Sapmple",
+  "repository": "https://github.com/ankdub12/pizzadelivery",
+  "logo": "http://pngimg.com/uploads/cat/cat_PNG100.png",
   "keywords": ["api.ai", "natural language"]
 }
