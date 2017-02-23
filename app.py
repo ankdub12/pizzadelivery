@@ -28,6 +28,7 @@ def webhook():
     return r
 
 def makeWebhookResult(req):
+    return "Pizza is on its way"
     if req.get("result").get("action") != "order.pizza":
         return {}
     result = req.get("result")
