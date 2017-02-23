@@ -37,15 +37,12 @@ def makeWebhookResult(req):
     size = parameters.get("size")
     time = parameters.get("time")
     address = parameters.get("address")
-
-    if topping == none and typeofpizza == none and size == none and time == none and address == none
-        return " Incomplete order cannot proceed with pizza delivery " + topping + typeofpizza + size + time + address
-    else
+    if topping == None or typeofpizza == None or size == None or time == None or address == None:
+        return "Incomplete order cannot proceed with pizza delivery " + topping + typeofpizza + size + time + address
+    else:
         speech = " All set enjoy your " + size + typeofpizza + " pizza with " + topping + " will be delivered at " + time + address
-
-    print("Response:")
+    print("Response: ")
     print(speech)
-
     return {
         "speech": speech,
         "displayText": speech,
@@ -54,10 +51,7 @@ def makeWebhookResult(req):
         "source": "apiai-pizzadelivery-sample"
     }
 
-
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
-
     print "Starting app on port %d" % port
-
     app.run(debug=True, port=port, host='0.0.0.0')
