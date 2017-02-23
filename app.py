@@ -37,10 +37,7 @@ def makeWebhookResult(req):
     size = parameters.get("size")
     time = parameters.get("time")
     address = parameters.get("address")
-    if topping == None or typeofpizza == None or size == None or time == None or address == None:
-        return "Incomplete order cannot proceed with pizza delivery " + topping + typeofpizza + size + time + address
-    else:
-        speech = " All set enjoy your " + size + typeofpizza + " pizza with " + topping + " will be delivered at " + time + address
+    speech = " All set enjoy your " + size + typeofpizza + " pizza with " + topping + " will be delivered at " + time + address
     print("Response: ")
     print(speech)
     return {
